@@ -1,0 +1,22 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Local variable overrides (содержат токены)
+*.tfvars
+# если есть локальные override файлы с секретами
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# SSH ключи
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Логи или временные файлы
+*.log
+*.backup
