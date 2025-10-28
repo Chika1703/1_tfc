@@ -30,11 +30,15 @@ Resource Terraform для Yandex Cloud:
 - [Compute Instance](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance).
 
 ---
-### Решение
+
+### Введение
 
 ## Т.к у меня нет доступа не к aws/yandex cloud, я буду использовать timeweb.cloud (модуль по тераформу принимали с провайдером [timeweb.cloud](https://github.com/Chika1703/terraform_hw/blob/main/02.1/Readme.md) ответ преподователя:)
 ![1](https://github.com/Chika1703/1_tfc/blob/main/img/1.jpg)
 
+---
+
+### Решение
 
 исправно работающий terraform:
 
@@ -47,6 +51,8 @@ Resource Terraform для Yandex Cloud:
 
 подключение из BM NAT в BM Private + подтверждение выход в интернет через BM NAT
 ![6](https://github.com/Chika1703/1_tfc/blob/main/img/5.jpg)
+
+---
 
 ### Правила приёма работы
 
