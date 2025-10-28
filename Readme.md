@@ -33,7 +33,7 @@ Resource Terraform для Yandex Cloud:
 
 ### Введение
 
-## Т.к у меня нет доступа не к aws/yandex cloud, я буду использовать timeweb.cloud (модуль по тераформу принимали с провайдером [timeweb.cloud](https://github.com/Chika1703/terraform_hw/blob/main/02.1/Readme.md) ответ преподователя:)
+#### Т.к у меня нет доступа не к aws/yandex cloud, я буду использовать timeweb.cloud (модуль по тераформу принимали с провайдером [timeweb.cloud](https://github.com/Chika1703/terraform_hw/blob/main/02.1/Readme.md) ответ преподователя:)
 ![1](https://github.com/Chika1703/1_tfc/blob/main/img/1.jpg)
 
 ---
