@@ -30,6 +30,9 @@ resource "twc_server" "nat" {
 
   provisioner "remote-exec" {
     inline = [
+      "mkdir -p /root/.ssh",
+      "echo '${file(var.private_key_path)}' > /root/.ssh/id_rsa",
+      "chmod 600 /root/.ssh/id_rsa",
       "sudo sysctl -w net.ipv4.ip_forward=1",
       "sudo apt-get update -y",
       "sudo DEBIAN_FRONTEND=noninteractive apt-get install -y iptables-persistent",
@@ -65,9 +68,9 @@ resource "twc_server" "private" {
 
   provisioner "remote-exec" {
     inline = [
-      "echo 'nameserver 8.8.8.8' | sudo tee /etc/resolv.conf",
-      "echo 'nameserver 1.1.1.1' | sudo tee -a /etc/resolv.conf",
-      "sudo systemctl restart systemd-resolved",
+      "sudo sed -i 's/^#DNS=.*/DNS=8.8.8.8 1.1.1.1/' /etc/systemd/resolved.conf",
+      "sudo ip route add default via 192.168.10.254",
+      "sudo systemctl restart systemd-resolved.service",
     ]
 
     connection {

@@ -50,7 +50,7 @@ Resource Terraform для Yandex Cloud:
 ![5](https://github.com/Chika1703/1_tfc/blob/main/img/5.jpg)
 
 подключение из BM NAT в BM Private + подтверждение выход в интернет через BM NAT
-![6](https://github.com/Chika1703/1_tfc/blob/main/img/5.jpg)
+![6](https://github.com/Chika1703/1_tfc/blob/main/img/6.jpg)
 
 ---
 
